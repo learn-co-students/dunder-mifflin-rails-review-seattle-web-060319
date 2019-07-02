@@ -1,0 +1,13 @@
+<label>Dog Name: </label><br>
+<h3><%=@dog.name%></h3>
+<label>Dog Breed: </label><br>
+<h3><%=@dog.breed%></h3>
+<label>Dog Age: </label><br>
+<h3><%=@dog.age%></h3>
+
+<%@employees.each do |employee|%>
+  <%if employee.dog_id == @dog.id%>
+<p><%=employee.first_name%>
+  <%=employee.last_name%></p>
+  <%end%>
+<%end%>
