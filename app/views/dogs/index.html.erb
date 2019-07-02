@@ -1,0 +1,4 @@
+<% @dogs.each do |diggitydog|%>
+<%=link_to diggitydog.name, diggitydog%><br>
+<%end%>
+<%= button_to("Sort By Popularity", {controller: "dogs", action: "sort_by"})%>
