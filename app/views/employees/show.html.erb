@@ -1,0 +1,11 @@
+<%= image_tag @employee.img_url, size: "200x200" if @employee.img_url%>
+<h1><%="#{@employee.first_name} #{@employee.last_name}"%></h1>
+<h4>Title</h4>
+<%= @employee.title %><br>
+<h4>Alias</h4>
+<%= @employee.alias %><br>
+<h4>Office</h4>
+<%= @employee.office %><br>
+<h4>Dog</h4>
+<%= @employee.dog.name %><br>
+
