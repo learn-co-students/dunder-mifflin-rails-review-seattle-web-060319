@@ -1,0 +1,10 @@
+<label>Hooman Name: </label><br>
+<h3><%=@employee.first_name%> <%=@employee.last_name%></h3>
+<label>Alias </label><br>
+<h3><%=@employee.alias%></h3>
+<label>Title: </label><br>
+<h3><%=@employee.title%></h3>
+<label>Office: </label><br>
+<h3><%=@employee.office%></h3>
+<label>Hooman Face:</label><br>
+<%=image_tag @employee.img_url%>
