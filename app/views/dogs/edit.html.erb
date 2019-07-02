@@ -1,0 +1,12 @@
+<%= form_for @dog do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+
+<%= f.label 'Choose Employees' %>
+<% @employees.each do |employee| %>
+<%= f.check_box :employees, { multiple: true }, employee, false %>
+<%= f.label employee.first_name %>
+    <% end %>
+<%= f.submit %>
+
+<% end %>
