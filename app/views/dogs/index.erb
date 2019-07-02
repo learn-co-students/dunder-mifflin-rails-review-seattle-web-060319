@@ -1,0 +1,4 @@
+<h1>Dunder Mifflin Doges</h1>
+<div><%@dogs.each do |dog|%></div>
+<div><%= link_to dog.name, dog_path(dog)%></div>
+<%end%>
