@@ -15,13 +15,10 @@ class DogsController < ApplicationController
   end
 
   def create
-    @dog = Dog.new
-
-    redirect_to @dog
   end
 
   def edit
-    @employees = Employee.all 
+    @employees = Employee.all
   end
 
   def update
